@@ -53,3 +53,28 @@ const myFunction=function(){
 }
 
 console.log(typeof myFunction);//function
+
+
+
+
+//+++++++++++++++++++++++++++++
+
+// Stack Memory(Perimitive type) --> variable decalare recevied me Copy , Heap Memory(-on Primitive type)  -->variable decalare recevied me Reference
+
+let Name="Satish";
+
+let ontherName=Name
+
+ontherName="Adarsh";
+console.log(Name);//Satish
+console.log(ontherName);//Adarsh
+
+let userOne={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+let userTwo=userOne
+
+userTwo.email="user@tata.com";
+console.log(userOne.email);///user@tata.com
+console.log(userTwo.email);///user@tata.com
