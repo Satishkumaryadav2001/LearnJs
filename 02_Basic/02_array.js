@@ -4,13 +4,13 @@ const dc_hroes=["suparman","IronMan","batman"]
 console.log(marvel_heros);//[ 'thor', 'IronMan', 'spiderMan' ]
 console.log(dc_hroes);//[ 'suparman', 'IronMan', 'batman' ]
 
-// marvel_heros.push(dc_hroes);
+marvel_heros.push(dc_hroes);
 
-// console.log(marvel_heros);//[ 'thor', 'IronMan', 'spiderMan', [ 'suparman', 'IronMan', 'batman' ] ]
+console.log(marvel_heros);//[ 'thor', 'IronMan', 'spiderMan', [ 'suparman', 'IronMan', 'batman' ] ]
 
-// console.log(marvel_heros[3]);[ 'suparman', 'IronMan', 'batman' ]
+console.log(marvel_heros[3]);[ 'suparman', 'IronMan', 'batman' ]
 
-// console.log(marvel_heros[3][2]);//batman
+console.log(marvel_heros[3][2]);//batman
 
 const allhero=marvel_heros.concat(dc_hroes)
 console.log(allhero);//[ 'thor', 'IronMan', 'spiderMan', 'suparman', 'IronMan', 'batman' ] ]
