@@ -84,3 +84,44 @@ console.log(loginUser2("Hitesh"));
 
 
 
+function calculateCartPrice(num01){//200
+    return num01
+}
+console.log(calculateCartPrice(200,400,600));
+
+
+function calculateCartPrice1(...num02){//200  Rest
+    return num02
+}
+console.log(calculateCartPrice1(200,400,600));//[200,400,600]
+
+
+function calculateCartPrice2(val1,val2,...num03){//200
+    return num03
+}
+console.log(calculateCartPrice2(200,400,600,800,1000));//[ 600, 800, 1000 ]
+
+
+
+const user={
+    username:"Satish",
+    price:199
+}
+function handeobject(anyobject){
+    console.log(`userename is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// handeobject(user)//userename is Satish and price is 199
+handeobject({     //userename is Shyam and price is 6867
+    username:"Shyam",
+    price:6867
+})
+
+
+const myArray = [20,30,40,50]
+function returnSecondValue(myArray){
+    return myArray[1]
+}
+
+console.log(returnSecondValue(myArray));//30
+console.log(returnSecondValue([100,200,300,400]));//200
