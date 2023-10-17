@@ -1,16 +1,16 @@
-// const user={
-//     username:"Satish",
-//     price:999,
+const user={
+    username:"Satish",
+    price:999,
 
 
-//     welcomeMessage:function(){
-//         console.log(`${this.username},welcome to website`);
-//         console.log(this);
-//     }
-// }
-// user.welcomeMessage()
-// user.username="Chanchala";
-// user.welcomeMessage()
+    welcomeMessage:function(){
+        console.log(`${this.username},welcome to website`);
+        console.log(this);
+    }
+}
+user.welcomeMessage()
+user.username="Chanchala";
+user.welcomeMessage()
 
 // OutPut
 
@@ -39,12 +39,12 @@ const user={
         console.log(`${this.username},welcome to website`);
     }
 }
-// console.log(this);//{}  empty object
+console.log(this);//{}  empty object
 
-// function chai(){
-//     console.log(this);
-// }
-// chai()
+function chai(){
+    console.log(this);
+}
+chai()
 
 
 // OutPut
@@ -74,11 +74,11 @@ const user={
 
 
 
-// function chai2(){
-//     let username="Satish"
-//     console.log(this);
-// }
-// chai2()
+function chai2(){
+    let username="Satish"
+    console.log(this);
+}
+chai2()
 
 // Outout
 
@@ -102,60 +102,60 @@ const user={
 //   performance: [Getter/Setter],
 //   fetch: [AsyncFunction: fetch],
 //   crypto: [Getter]
-//}
-
-// function chai3(){
-//     let username="Satish"
-//     console.log(this.username);
 // }
-// chai3()//undefined
+
+function chai3(){
+    let username="Satish"
+    console.log(this.username);
+}
+chai3()//undefined
 
 
 
-// const chai4=function(){
-//     let username="hitesh";
-//     console.log(this.username);
-// }
-// chai4()//undefined
+const chai4=function(){
+    let username="hitesh";
+    console.log(this.username);
+}
+chai4()//undefined
 
-// const chai5 =() =>{
-//     let username="|Satish kumar yadav";
-//     console.log(this.username);
-// }
-// chai5() //undefineed
-
-
-// const chai6 =() =>{
-//     let username="Satish kumar yadav";
-//     console.log(this);
-// }
-// chai6()//{}  empty
+const chai5 =() =>{
+    let username="|Satish kumar yadav";
+    console.log(this.username);
+}
+chai5() //undefineed
 
 
-// const addTwo = (num1,num2) => {    Excipatalishift return
-//     return num1+num2
-// }
-// console.log(addTwo(1,2));//3\
+const chai6 =() =>{
+    let username="Satish kumar yadav";
+    console.log(this);
+}
+chai6()//{}  empty
 
 
-// const addTwo = (num1,num2) =>   num1+num2
-
-// console.log(addTwo(1,2));//3
-
-
-// const addTwo = (num1,num2) => (num1+num2)//          Empatlishift return
-
-// console.log(addTwo(1,2));//3
+const addTwo = (num1,num2) => {   // Excipatalishift return
+    return num1+num2
+}
+console.log(addTwo(1,2));//3\
 
 
-// const addTwo = (num1,num2) => {user: "Satish"}
+const addTwo2 = (num1,num2) =>   num1+num2
 
-// console.log(addTwo(1,2));//undefined
+console.log(addTwo2(1,2));//3
+
+
+const addTwo3 = (num1,num2) => (num1+num2)//          Empatlishift return
+
+console.log(addTwo3(1,2));//3
+
+
+const addTwo4 = (num1,num2) => {user: "Satish"}
+
+console.log(addTwo4(1,2));//undefined
 
 
 
-const addTwo = (num1,num2) => ({user: "Satish"})
+const addTwo5 = (num1,num2) => ({user: "Satish"})
 
-console.log(addTwo(1,2));//{ user: 'Satish' }
+console.log(addTwo5(1,2));//{ user: 'Satish' }
 
 
