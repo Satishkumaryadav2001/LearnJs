@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing Image</h2>
+    <div>
+        <ul id="images">
+            <li></li><img width="200px" id="netural" alt="" src="https://images.pexels.com/photos/19269097/pexels-photo-19269097/free-photo-of-an-aerial-view-of-a-mountain-range-with-a-small-house.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"></li>
+            <li></li><img width="200px" id="Sky" alt="" src="https://images.pexels.com/photos/13211898/pexels-photo-13211898.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"></li>
+            <li></li><img width="200px" id="city" alt="" src="https://images.pexels.com/photos/326468/pexels-photo-326468.jpeg?auto=compress&cs=tinysrgb&w=800"></li>
+            <li></li><img width="200px" id="cloud" alt="" src="https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=600" ></li>
+            <li></li><img width="200px" id="air" alt="" src="https://images.pexels.com/photos/414805/pexels-photo-414805.jpeg?auto=compress&cs=tinysrgb&w=1200"></li>
+            <li> <a style="color: aliceblue;" href="https://google.com" id="Google">Google</a></li>
+        </ul>
+    </div>
+</body>
+
+<script>
+
+
+    // document.getElementById('city').onclick=function(){
+    //     alert('city Clicked')
+    // }
+
+
+    
+ //attachEvent()
+ //jQury-on
+//type,timestamp,defaultPrevent
+//target,toElement,sreElement,currentTarget
+//clientX,ClientY,screenX,screenY,
+//altkey,ctrlkey,shiftkey,keycode
+
+
+
+// document.getElementById('images').addEventListener('click',function(e){
+//        console.log("clicked inside the ul");    },false)
+
+//     document.getElementById('air').addEventListener('click',function(e){
+//         console.log('air clicked')    },false)
+
+
+    //     document.getElementById('images').addEventListener('click',function(e){
+    //    console.log("clicked inside the ul");    },true)
+
+    // document.getElementById('air').addEventListener('click',function(e){
+    //     console.log('air clicked')    },true)
+
+//     document.getElementById('images').addEventListener('click',function(e){
+//        console.log("clicked inside the ul");    },false)
+
+//     document.getElementById('air').addEventListener('click',function(e){
+//         console.log('air clicked')   
+//         e.stopPropagation()
+//     },false)
+
+// document.getElementById('Google').addEventListener('click',function(e){
+// e.preventDefault();
+// e.preventDefault();
+// console.log("Google Clicked");
+// },false)
+
+document.querySelector('#images').addEventListener('click',function(e){
+    console.log(e.target.tagName);
+    if(e.target.tagName==='IMG'){
+        console.log(e.target.id);
+        let removeIt=e.target.parentNode
+    removeIt.remove()
+    }
+    // let removeIt=e.target.parentNode
+    // removeIt.remove()
+    // removeIt.parentNode.removeChild(removeIt)
+})
+</script>
+
+</html>
